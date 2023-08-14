@@ -126,37 +126,83 @@ class BookStore
 		System.out.println("||            ENTER YOUR CHOICE TO ADD BOOK IN CART             ||");
 		System.out.println("==================================================================");
 		
-		switch(sc.nextInt())
+		int i=sc.nextInt();
+		while(i>=0)
 		{
-		case 1:
-			
-			System.out.println(" JAVA BOOKS ADDED IN CART");
-			sc.nextInt();
-
-		case 2:
-			
-			System.out.println(" PYTHON BOOK ADDED IN CART");
-			sc.nextInt();
-
-		case 3:
-			
-			System.out.println(" HTML, CSS, JavaScript BOOK ADDED IN CART");
-			sc.nextInt();
-		
-		case 4:
-		   
-			System.out.println(" SQL BOOK ADDED IN CART");
-			sc.nextInt();
-
-		case 5:
-			
-			System.out.println("  !!!...Thank You...!!!  \n !!!...Visit Again...!!!");
-			MainPage();
-		break;	
-			
-		default:
-		System.out.println("Invalid data");
+			if(i==1)
+			{
+				System.out.println("Java books are Added in Cart");
+				System.out.println("if you want to continue enter 1");
+				int c=sc.nextInt();
+				if(c==1)
+				{
+					System.out.println("ENTER YOUR CHOICE");
+					int d=sc.nextInt();
+					i=d;
+				}
+				else
+				{
+					break;
+				}
+			}
+			else if(i==2)
+			{
+				System.out.println("Python books are added in Cart");
+				System.out.println("If you want to continue press 1");
+				int c=sc.nextInt();
+				if(c==1)
+				{
+					System.out.println("ENTER YOUR CHOICE");
+					int d=sc.nextInt();
+					i=d;
+				}
+				else
+				{
+					break;
+				}
+			}
+			else if(i==3)
+			{
+				System.out.println("HTML, CSS, JAVASCRIPT Books added in Cart");
+				System.out.println("if you want to continue enter 1");
+				int c=sc.nextInt();
+				if(c==1)
+				{
+					System.out.println("ENTER YOUR CHOICE");
+					int d=sc.nextInt();
+					i=d;
+				}
+				else
+				{
+					break;
+				}
+			}
+			else if(i==4)
+			{
+				System.out.println("SQL Book added in Cart");
+				System.out.println("if you want to continue press 1");
+				int c=sc.nextInt();
+				if(c==1)
+				{
+					System.out.println("ENTER YOUR CHOICE");
+					int d=sc.nextInt();
+					i=d;
+				}
+				else
+				{
+					break;
+				}
+			}
+			else if(i==5)
+			{
+				System.out.println("!!!...THANK YOU VISIT AGAIN...!!!");
+			}
 		}
+		
+
+		System.out.println("  !!!...Thank You...!!!  \n !!!...Visit Again...!!!");
+		MainPage();
+
 		
 	}
 	static void Addition()
